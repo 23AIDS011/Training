@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 export default function FormComponent() {
-  const [formData, setFormData] = useState({roll: 22,name: "Atharsha",gender: "Female",city: "Tvl",phone: "8870455742",});
+  const [formData, setFormData] = useState({roll: 11,name: "Akshaya Natesan",gender: "Female",city: "Krr",phone: "9514152789",});
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({...prevData,[name]: value,}));
@@ -8,7 +8,7 @@ export default function FormComponent() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Updated Data:", formData);
-    alert(Form Submitted: ${JSON.stringify(formData, null, 2)});
+    alert(`Form Submitted: ${JSON.stringify(formData, null, 2)}`);
   };
 
   return (
